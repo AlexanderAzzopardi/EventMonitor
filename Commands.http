@@ -1,0 +1,23 @@
+GET http://localhost:5002/dapr/subscribe HTTP/1.1
+
+###
+POST http://localhost:5030/v1.0/invoke/publisher/method/publish HTTP/1.1
+content-type: application/json
+
+{
+    "subscriber" :
+    {
+        "pubsubname": "pubsub",
+        "topic" : "mytopic"
+    },
+    "data" :
+    {
+        "value": 195,
+        "unitType": "Length",
+        "unitStart": "m",
+        "unitEnd" : "m"
+    }
+}
+
+
+
