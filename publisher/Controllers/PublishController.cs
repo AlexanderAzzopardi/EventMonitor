@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-//dapr run --app-id "publisher" --app-port "5003" --dapr-http-port "5030" -d ..\components\ -- dotnet run --urls="http://+:5003"
+//dapr run --app-id publisher --app-port 5003 --dapr-http-port 5030 -d ..\components\ -- dotnet run --urls http://+:5003
 
 namespace publisher.Controllers
 {
